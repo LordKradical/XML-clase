@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE proveedores [
+    <!ELEMENT proveedores (proveedor*)>
+    <!ELEMENT proveedor (nombre, productos, telefono?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT productos (producto+)>
+    <!ELEMENT producto (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+]>
+
+<proveedores>
+    <proveedor>
+        <nombre>Pascal</nombre>
+        <productos>
+            <producto>Leche</producto>
+            <producto>Flan</producto>
+        </productos>
+    </proveedor>
+    <proveedor>
+        <nombre>Capitán Pesconovo</nombre>
+        <productos>
+            <producto>Merluza</producto>
+        </productos>
+        <telefono>952888777</telefono>
+    </proveedor>
+</proveedores>

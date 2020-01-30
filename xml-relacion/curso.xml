@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE curso [
+    <!ELEMENT curso (titulo, unidad)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT unidad (lecciones)>
+    <!ATTLIST unidad titulo CDATA #REQUIRED>
+    <!ELEMENT lecciones (leccion*)>
+    <!ELEMENT leccion (#PCDATA)>
+    <!ATTLIST leccion titulo CDATA #REQUIRED>
+]>
+
+<curso>
+    <titulo>Introducción a XML</titulo>
+    <unidad titulo="XML">
+        <lecciones>
+            <leccion titulo="Introducción">El contenido de la lección Introducción</leccion>
+            <leccion titulo="Documento bien formado">El contenido de la lección Documento bien formado</leccion>
+            <leccion titulo="Ejemplos de uso">El contenido de la lección Ejemplos de uso</leccion>
+        </lecciones>
+    </unidad>
+</curso>
