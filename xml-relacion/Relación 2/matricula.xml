@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE matricula [
+    <!ELEMENT matricula (personal, pago)+>
+    <!ELEMENT personal (dni, nombre, titulacion, curso_academico, domicilios)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT titulacion (#PCDATA)>
+    <!ELEMENT curso_academico (#PCDATA)>
+    <!ELEMENT domicilios (domicilio+)>
+    <!ATTLIST domicilio tipo (familiar|habitual) #REQUIRED>
+    <!ELEMENT domicilio (nombre)>
+    <!ELEMENT pago (tipo_matricula)>
+    <!ELEMENT tipo_matricula (#PCDATA)>
+]>
+
+<matricula>
+    <personal>
+        <dni>12345678A</dni>
+        <nombre>María</nombre>
+        <titulacion>CFGS Desarrollo de aplicaciones multiplataforma</titulacion>
+        <curso_academico>Primero</curso_academico>
+        <domicilios>
+            <domicilio tipo="familiar">
+                <nombre>Calle Sin Sentido 1</nombre>
+            </domicilio>
+        </domicilios>
+    </personal>
+    <pago>
+        <tipo_matricula>Parcial</tipo_matricula>
+    </pago>
+</matricula>
