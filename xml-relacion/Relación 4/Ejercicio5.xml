@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+
+<biblioteca>
+    <libro isbn="978-0756413712">
+        <titulo>The Name of the Wind</titulo>
+        <disponible tiempo="2-Semanas" unidad="5" />
+        <autor>Patrick Rothfuss</autor>
+        <formato>Tapa dura</formato>
+        <publicacion>DAW</publicacion>
+        <precio cantidad="27,34" moneda="dolar" />
+        <descuento/>
+        <enlacelibro href="https://www.amazon.com/Name-Wind-Anniversary-Kingkiller-Chronicle/dp/0756413710/" />
+        <portada/>
+    </libro>
+    <libro isbn="978-0143111603">
+        <titulo>Neuromancer</titulo>
+        <disponible tiempo="1-Semana" unidad="3" />
+        <autor>William Gibson</autor>
+        <formato>Tapa dura</formato>
+        <publicacion>Penguin Classics</publicacion>
+        <precio cantidad="11,39" moneda="dolar" />
+        <descuento/>
+        <enlacelibro href="https://www.amazon.com/Neuromancer-Penguin-Galaxy-William-Gibson/dp/0143111604/" />
+        <portada/>
+    </libro>
+</biblioteca>
