@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE equipos_de_futbol SYSTEM "EquiposDeFutbol.dtd">
+
+<equipos_de_futbol>
+    <equipo>
+        <nombre>Levante</nombre>
+        <ciudad>Valencia</ciudad>
+        <entrenador></entrenador>
+        <jugadores>
+            <jugador posicion="portero">
+                <nombre>Javier Jim</nombre>
+                <nacionalidad>españa</nacionalidad>
+            </jugador>
+            <jugador posicion="delantero">
+                <nombre>Nong</nombre>
+                <nacionalidad>camerun</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombre>Real Sociedad</nombre>
+        <ciudad>San Sebastián</ciudad>
+        <entrenador></entrenador>
+        <jugadores>
+            <jugador posicion="portero">
+                <nombre>Claudio Bravo</nombre>
+                <nacionalidad>chilena</nacionalidad>
+            </jugador>
+            <jugador posicion="defensa">
+                <nombre>Mikel Gon</nombre>
+                <nacionalidad>españa</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos_de_futbol>
