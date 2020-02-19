@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas [
+    <!ELEMENT personas (persona*)>
+    <!ELEMENT persona (nombre, nacimiento?, direccion+, sexo)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nacimiento EMPTY>
+    <!ATTLIST nacimiento
+        dia CDATA #REQUIRED
+        mes CDATA #REQUIRED
+        anyo CDATA #REQUIRED  
+    >
+    <!ELEMENT direccion (calle, poblacion, provincia, cpostal)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT poblacion (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT cpostal (#PCDATA)>
+    <!ELEMENT sexo EMPTY>
+    <!ATTLIST sexo valor (varon|mujer|otro) #REQUIRED>
+]>
+
+<personas>
+    <persona>
+        <nombre>Juan Pardo</nombre>
+        <nacimiento dia="10" mes="Abril" anyo="1982" />
+        <direccion>
+            <calle>caoba, 1</calle>
+            <poblacion>Madrid</poblacion>
+            <provincia>Madrid</provincia>
+            <cpostal>28005</cpostal>
+        </direccion>
+        <sexo valor="varon" />
+    </persona>
+    <persona>
+        <nombre>Marta Rodríguez</nombre>
+        <direccion>
+            <calle>Doctor Carulla, 1</calle>
+            <poblacion>Barcelona</poblacion>
+            <provincia>Barcelona</provincia>
+            <cpostal>08940</cpostal>
+        </direccion>
+        <sexo valor="mujer" />
+    </persona>
+</personas>

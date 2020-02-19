@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE facturas [
+    <!NOTATION jpg SYSTEM "aplicaciones/visordeimagenes.exe">
+    <!ENTITY c0360 SYSTEM "caratulas/c0360.jpg" NDATA jpg>
+    <!ENTITY c0437 SYSTEM "caratulas/c0437.jpg" NDATA jpg>
+    <!ENTITY c1201 SYSTEM "caratulas/c1201.jpg" NDATA jpg>
+
+    <!ELEMENT facturas (factura*)>
+    <!ELEMENT factura (datos_cliente, datos_ticket)>
+    <!ELEMENT datos_cliente (nombre, apellido, apellido?, dni, telefono)>
+    <!ATTLIST datos_cliente id ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT datos_ticket (resguardo, alquileres?, compras?)>
+    <!ELEMENT resguardo (forma_pago, importe_total)>
+    <!ELEMENT forma_pago (#PCDATA)>
+    <!ELEMENT importe_total (#PCDATA)>
+    <!ELEMENT alquileres (fecha_devolucion, peliculas)>
+    <!ELEMENT fecha_devolucion (#PCDATA)>
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula (titulo, genero, duracion, actores)>
+    <!ATTLIST pelicula
+        idPelicula ID #REQUIRED
+        valoracion CDATA ""
+        caratula ENTITY #IMPLIED
+    >
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)>
+    <!ELEMENT actores (actor, actor, actor)>
+    <!ELEMENT actor (nombre, apellido, apellido?)>
+    <!ELEMENT compras (dvds?, cintas?)>
+    <!ELEMENT dvds (dvd+)>
+    <!ELEMENT dvd (titulo, fecha_salida, extras?)>
+    <!ELEMENT fecha_salida (#PCDATA)>
+    <!ELEMENT extras EMPTY>
+    <!ELEMENT cintas (cinta+)>
+    <!ELEMENT cinta (titulo, formato, rebobinado?)>
+    <!ELEMENT formato (#PCDATA)>
+    <!ELEMENT rebobinado EMPTY>
+]>
+
+<!-- Hacer carátulas con ENTITY -->
+
+<facturas>
+    <factura>
+        <datos_cliente id="c01">
+            <nombre>Daniel</nombre>
+            <apellido>Martín</apellido>
+            <apellido>López</apellido>
+            <dni>12345678Z</dni>
+            <telefono>951017654</telefono>
+        </datos_cliente>
+
+        <datos_ticket>
+            <resguardo>
+                <forma_pago>Tarjeta</forma_pago>
+                <importe_total>19,99€</importe_total>
+            </resguardo>
+            <alquileres>
+                <fecha_devolucion>14/02/2020</fecha_devolucion>
+                <peliculas>
+                    <pelicula idPelicula="p128" valoracion="8,5" caratula="c0360">
+                        <titulo>El viaje de Chihiro</titulo>
+                        <genero>Animación, aventura</genero>
+                        <duracion>2h 5m</duracion>
+                        <actores>
+                            <actor>
+                                <nombre>Rumi</nombre>
+                                <apellido>Hiiragi</apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Miyu</nombre>
+                                <apellido>Irino</apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Mari</nombre>
+                                <apellido>Natsuki</apellido>
+                            </actor>
+                        </actores>
+                    </pelicula>
+                </peliculas>
+            </alquileres>
+            <compras>
+                <dvds>
+                    <dvd>
+                        <titulo>El señor de los anillos: El retorno del rey</titulo>
+                        <fecha_salida>2003</fecha_salida>
+                        <extras />
+                    </dvd>
+                </dvds>
+                <cintas>
+                    <cinta>
+                        <titulo>Terminator 2: El juicio final</titulo>
+                        <formato>VHS</formato>
+                    </cinta>
+                </cintas>
+            </compras>
+        </datos_ticket>
+    </factura>
+    <factura>
+        <datos_cliente id="c02">
+            <nombre>Lorena</nombre>
+            <apellido>Pérez</apellido>
+            <apellido>Sánchez</apellido>
+            <dni>64135790Z</dni>
+            <telefono>649316199</telefono>
+        </datos_cliente>
+
+        <datos_ticket>
+            <resguardo>
+                <forma_pago>Efectivo</forma_pago>
+                <importe_total>4,99€</importe_total>
+            </resguardo>
+            <alquileres>
+                <fecha_devolucion>18/02/2020</fecha_devolucion>
+                <peliculas>
+                    <pelicula idPelicula="p692" valoracion="8,6" caratula="c0437">
+                        <titulo>Interstellar</titulo>
+                        <genero>Ciencia ficción, aventura, drama</genero>
+                        <duracion>2h 49m</duracion>
+                        <actores>
+                            <actor>
+                                <nombre>Matthew</nombre>
+                                <apellido>McConaughey</apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Anne</nombre>
+                                <apellido>Hathaway</apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Jessica</nombre>
+                                <apellido>Chastain</apellido>
+                            </actor>
+                        </actores>
+                    </pelicula>
+                    <pelicula idPelicula="p093" valoracion="8,7" caratula="c1201">
+                        <titulo>Matrix</titulo>
+                        <genero>Ciencia ficción, acción</genero>
+                        <duracion>2h 16m</duracion>
+                        <actores>
+                            <actor>
+                                <nombre>Keanu</nombre>
+                                <apellido>Reeves</apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Laurence</nombre>
+                                <apellido>Fishburne</apellido>
+                            </actor>
+                            <actor>
+                                <nombre>Carrie-Anne</nombre>
+                                <apellido>Moss</apellido>
+                            </actor>
+                        </actores>
+                    </pelicula>
+                </peliculas>
+            </alquileres>
+        </datos_ticket>
+    </factura>
+</facturas>
