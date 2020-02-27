@@ -1,0 +1,28 @@
+<!ELEMENT delincuentes (delincuente*)>
+<!ELEMENT delincuente ((trasladado|no_trasladado|no_arrestado), nombre, apellidos, sexo, nacionalidad, centro_procedencia?, delito, foto+)>
+<!ATTLIST delincuente 
+    id ID #REQUIRED
+    clave ID #IMPLIED
+    condena CDATA #IMPLIED
+    peligrosidad (1|2|3) #IMPLIED
+    permisos (1|2|3) #IMPLIED
+>
+<!ELEMENT trasladado EMPTY>
+<!ELEMENT no_trasladado EMPTY>
+<!ELEMENT no_arrestado EMPTY>
+<!ATTLIST no_arrestado
+    recompensa CDATA #IMPLIED
+    zona CDATA #REQUIRED
+    lugar_avistado CDATA #REQUIRED
+>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre apodo CDATA "">
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT sexo EMPTY>
+<!ATTLIST sexo valor (H|M) #REQUIRED>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT centro_procedencia (#PCDATA)>
+<!ATTLIST centro_procedencia clave IDREF #REQUIRED>
+<!ELEMENT delito (#PCDATA)>
+<!ELEMENT foto EMPTY>
+<!ATTLIST foto src CDATA #REQUIRED>

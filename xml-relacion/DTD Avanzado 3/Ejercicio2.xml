@@ -42,8 +42,6 @@
     <!ELEMENT rebobinado EMPTY>
 ]>
 
-<!-- Hacer carátulas con ENTITY -->
-
 <facturas>
     <factura>
         <datos_cliente id="c01">

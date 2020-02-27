@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE delincuentes SYSTEM "delincuentes.dtd">
+
+<delincuentes>
+    <delincuente id="A101" clave="A421" condena="123 años" peligrosidad="3" permisos="1">
+        <trasladado />
+        <nombre>Pedro</nombre>
+        <apellidos>Rodrigues Filho</apellidos>
+        <sexo valor="H" />
+        <nacionalidad>Brasileña</nacionalidad>
+        <centro_procedencia clave="A421">Mineriao de Brasil</centro_procedencia>
+        <delito>Asesino en serie. Mató a más de 71 personas antes de los 19 años. También mató a varios compañeros de prisión.</delito>
+        <foto src="fotoA101_1.jpg" />
+    </delincuente>
+    <delincuente id="A102" clave="X960" condena="Pena de muerte" peligrosidad="2" permisos="2">
+        <trasladado />
+        <nombre apodo="Hombre pájaro de Alcatraz">Robert</nombre>
+        <apellidos>Stroud</apellidos>
+        <sexo valor="H" />
+        <nacionalidad>Inglesa</nacionalidad>
+        <centro_procedencia clave="X960">Alcatraz</centro_procedencia>
+        <delito>Organizó uno de los mayores tiroteos de EEUU, siendo capturado entonces. Tras asesinar a varios compañeros, guardas y cocineros es trasladado aislado para recibir la pena de muerte.</delito>
+        <foto src="fotoA102_1.jpg" />
+    </delincuente>
+    <delincuente id="A103" clave="Z111" condena="Cadena perpetua" peligrosidad="1" permisos="3">
+        <trasladado />
+        <nombre apodo="Creepy">Alvin</nombre>
+        <apellidos>Karpis</apellidos>
+        <sexo valor="H" />
+        <nacionalidad>Estadounidense</nacionalidad>
+        <centro_procedencia clave="Z111">Alcatraz</centro_procedencia>
+        <delito>Uno de los mayores enemigos de EEUU, quien robaba y secuestraba con su banda. Cuando fue encarcelado tenía también una banda, siendo también alguien siniestro y sangriento. Fue nombrado panadero y envenenó a guardias y presos.</delito>
+        <foto src="fotoA103_1.jpg" />
+    </delincuente>
+    <delincuente id="B710" clave="W123" condena="63 años" peligrosidad="1" permisos="3">
+        <no_trasladado />
+        <nombre>Fabrizio</nombre>
+        <apellidos>Joao Silva</apellidos>
+        <sexo valor="H" />
+        <nacionalidad>Portuguesa</nacionalidad>
+        <centro_procedencia clave="W123">Teixeiro</centro_procedencia>
+        <delito>Mató a su novia, a su familia y ya encarcelado ha matado a varios reclusos, e inlcuso a patadas.</delito>
+        <foto src="fotoB710_1.jpg" />
+    </delincuente>
+    <delincuente id="S490">
+        <no_arrestado recompensa="10M$" zona="Alcatraz" lugar_avistado="Alcatraz" />
+        <nombre>Clarence</nombre>
+        <apellidos>Anlin</apellidos>
+        <sexo valor="H" />
+        <nacionalidad>Estadounidense</nacionalidad>
+        <delito>Estafador y atracador.</delito>
+        <foto src="fotoS490_1.jpg" />
+    </delincuente>
+    <delincuente id="S491">
+        <no_arrestado recompensa="10M$" zona="Alcatraz" lugar_avistado="Denver" />
+        <nombre>John</nombre>
+        <apellidos>Anglin</apellidos>
+        <sexo valor="H" />
+        <nacionalidad>Estadounidense</nacionalidad>
+        <delito>Estafador y atracador.</delito>
+        <foto src="fotoS491_1.jpg" />
+    </delincuente>
+    <delincuente id="S492">
+        <no_arrestado recompensa="10M$" zona="Alcatraz" lugar_avistado="Alcatraz" />
+        <nombre>Frank</nombre>
+        <apellidos>Morris</apellidos>
+        <sexo valor="H" />
+        <nacionalidad>Estadounidense</nacionalidad>
+        <delito>Estafador y atracador.</delito>
+        <foto src="fotoS492_1.jpg" />
+    </delincuente>
+</delincuentes>
